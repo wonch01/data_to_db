@@ -20,9 +20,9 @@ def create_table(conn,cur):
         id serial ,
         coordinates integer[],
         text_data text,
-        numeric_data double precision,
-        binary_image bytea
+        numeric_data double precision
     );
+    
     """
     cur.execute(create_table_sql)
     conn.commit()
