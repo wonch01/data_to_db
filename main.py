@@ -4,8 +4,8 @@ def main():
     try:
         conn, cur = sample.postgres_con('postgres', 1234, 'localhost',
                                          '5432', 'djtp_printer_monitoring_db')
-        sample.create_table()
-        sample.insert_data()
+        sample.create_table(conn,cur)
+        sample.insert_data(conn,cur)
         sample.postgres_close(conn, cur)
 
     except Exception as error:

@@ -14,13 +14,9 @@ def postgres_close(pg_conn, pg_cur):
     pg_cur.close()
 
 
-conn, cur= postgres_con('postgres', 1234, 'localhost',
-                                         '5432', 'djtp_printer_monitoring_db')
-
-
-def create_table():
+def create_table(conn,cur):
     create_table_sql = """
-    CREATE TABLE IF NOT EXISTS your_table_name (
+    CREATE TABLE IF NOT EXISTS table_name (
         id serial ,
         coordinates integer[],
         text_data text,
@@ -29,9 +25,10 @@ def create_table():
     );
     """
     cur.execute(create_table_sql)
+    conn.commit()
 
 
-def insert_data():
+def insert_data(conn,cur):
     data = [
         (   [[24, 8], [110, 8], [110, 16], [24, 16]],
             '미로나스국T리! 괴갑대쏘다',
