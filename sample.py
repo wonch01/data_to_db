@@ -1,20 +1,7 @@
 import psycopg2
 import json
-import requests
-
-
-def open_site():
-    url = "https://www.postgresql.org/download/"
-    try:
-        response = requests.get(url)
-
-        if response.status_code == 200:
-            print(response.text)
-        else:
-            print(f"HTTP 요청 실패. 상태 코드: {response.status_code}")
-
-    except requests.exceptions.RequestException as e:
-        print(f"오류 발생: {e}")
+import pandas as pd
+from sqlalchemy import create_engine
 
 
 def load_config(filename='config.json'):
@@ -38,7 +25,8 @@ def postgres_con(config):
 
     pg_conn = psycopg2.connect(host=host, dbname=db, user=user, password=password, port=port)
     pg_cur = pg_conn.cursor()
-    return pg_conn, pg_cur
+    pg_engine = create_engine(f"postgresql+psycopg2://{user}:{password}@{host}:{port}/{db}")
+    return pg_conn, pg_cur, pg_engine
 
 
 def postgres_close(pg_conn, pg_cur):
@@ -93,4 +81,16 @@ def insert_data(conn,cur):
     for item in data:
         cur.execute(insert_data_sql, (item[0], item[1], item[2]))
     conn.commit()
+
+
+def drop_table(name, cur):
+    query = f"drop table if exists {name}"
+    cur.execute(query)
+
+
+def show_data(pg_engine):
+    query = "select * from sample_data"
+    pd.set_option('display.max_columns', None)
+    df = pd.read_sql_query(query, pg_engine)
+    print(df)
 
