@@ -7,6 +7,14 @@
 - **에디터:** PyCharm
 
 
+- 패키지 다운로드 :
+  pip install -r requirements.txt
+
+  
+- 실행하는 방법 :
+  python3 main.py*********
+
+
 - config 파일 구성하기 :
 
    config.json 파일에 id, password, host, port, name, schema 넣기
@@ -31,3 +39,13 @@ conn, cur, engine = sample.postgres_con(config)로 연결
 - 들어간 data 보기 :
 
    sample.show_data(engine) 으로 확인
+
+
+- table 삭제하기 :
+
+  sample.drop_table(name,cur)로 테이블 삭제
+
+
+- TODO :
+
+  docker - container 적용하기
