@@ -7,13 +7,3 @@
   "db_name": "postgres",
   "db_schema": "public"
 }
-
-{
-  "db_user": "keti_superuser",
-  "db_password": 1234,
-  "db_host": "localhost",
-  "db_port": "5432",
-  "db_name": "djtp_printer_monitoring_db",
-  "db_name": "postgres",
-  "db_schema": "public"
-}

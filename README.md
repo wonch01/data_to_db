@@ -22,7 +22,7 @@
 
 - 데이터 넣는 방법 : 
 
-    def insert_data()의 data에 데이터 넣기
+    sample.py - def insert_data()의 data에 데이터 넣기
 
 
 - db에 연결하기 :
@@ -33,17 +33,17 @@ conn, cur, engine = sample.postgres_con(config)로 연결
   
 - table 만들기 :
 
-   sample.create_table(conn,cur)로 테이블 생성
+   main.py - sample.create_table(conn,cur)로 테이블 생성
 
 
 - 들어간 data 보기 :
 
-   sample.show_data(engine) 으로 확인
+   main.py - sample.show_data(engine) 으로 확인
 
 
 - table 삭제하기 :
 
-  sample.drop_table(name,cur)로 테이블 삭제
+  main.py - sample.drop_table(name,cur)로 테이블 삭제
 
 
 - TODO :
