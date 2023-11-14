@@ -1,9 +1,9 @@
 {
-  "db_user": "postgres",
-  "db_password": 1234,
-  "db_host": "localhost",
-  "db_port": "5432",
-  "db_name": "djtp_printer_monitoring_db",
+  "db_user": "keti_superuser",
+  "db_password": "madcoder",
+  "db_host": "'keties.iptime.org",
+  "db_port": "55432",
+  "db_name": "data_lincsolution",
   "db_name": "postgres",
   "db_schema": "public"
 }
