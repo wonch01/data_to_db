@@ -1,7 +1,7 @@
 {
   "db_user": "keti_superuser",
   "db_password": "madcoder",
-  "db_host": "'keties.iptime.org",
+  "db_host": "keties.iptime.org",
   "db_port": "55432",
   "db_name": "data_lincsolution",
   "db_name": "postgres",
