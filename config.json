@@ -1,8 +1,0 @@
-{
-  "db_user": "keti_superuser",
-  "db_password": "madcoder",
-  "db_host": "keties.iptime.org",
-  "db_port": "55432",
-  "db_name": "wctest",
-  "db_schema": "public"
-}
