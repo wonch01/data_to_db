@@ -1,4 +1,4 @@
-import sample
+import db_handler
 
 
 def main():

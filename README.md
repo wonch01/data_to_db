@@ -12,7 +12,7 @@
 
   
 - 실행하는 방법 :
-  python3 main.py*********
+  python3 main.py
 
 
 - config 파일 구성하기 :
