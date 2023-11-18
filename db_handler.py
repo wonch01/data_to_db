@@ -2,7 +2,6 @@ import psycopg2
 import json
 import pandas as pd
 from sqlalchemy import create_engine
-
 import data_handler
 
 
@@ -44,7 +43,6 @@ def create_table(conn, cur):
         text_data text,
         numeric_data double precision
     );
-
     """
     cur.execute(create_table_sql)
     conn.commit()
@@ -63,13 +61,16 @@ def insert_data(conn, cur):
     conn.commit()
 
 
+def select_data(query):
+    insert_query = query
+    conn, cur, engine = postgres_con(load_config())
+    df = pd.read_sql_query(insert_query, engine)
+    return df
+
+
 def drop_table(name, cur):
     query = f"drop table if exists {name}"
     cur.execute(query)
 
 
-def show_data(pg_engine):
-    query = "select * from Mydata"
-    pd.set_option('display.max_columns', None)
-    df = pd.read_sql_query(query, pg_engine)
-    print(df)
+

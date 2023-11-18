@@ -1,6 +1,7 @@
 import psycopg2
 import json
 import pandas as pd
+from pandas import json_normalize
 from sqlalchemy import create_engine
 import db_handler
 
@@ -11,14 +12,20 @@ def read_data(file_path):
     return data
 
 
-def select_data(query):
-    insert_query = query
-    config = sample.load_config()
-    conn, cur, engine = sample.postgres_con(config)
-    df = pd.read_sql_query(insert_query, engine)
+def show_data(pg_engine):
+    query = "select * from Mydata"
+    pd.set_option('display.max_columns', None)
+    df = pd.read_sql_query(query, pg_engine)
+    print(df)
+
+
+#결측치 row 값 삭제
+def missing_data(pg_engine):
+    query = "select * from Mydata"
+    pd.set_option('display.max_columns', None)
+    df = pd.read_sql_query(query, pg_engine)
+    df = df.dropna(axis=0)
     return df
-
-
 
 
 
