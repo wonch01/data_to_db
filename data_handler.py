@@ -28,5 +28,11 @@ def missing_data(pg_engine):
     return df
 
 
+def drop_duplicates(pg_engine):
+    query = "select * from Mydata"
+    pd.set_option('display.max_columns', None)
+    df = pd.read_sql_query(query, pg_engine)
+    df.drop_duplicates(subset='text_data')
+    return df
 
 
