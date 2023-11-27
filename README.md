@@ -1,5 +1,5 @@
-# data_to_db
-# Python Postgresql 개발환경
+# Data_to_DB
+# Python PostgreSQL 개발환경
 
 - **언어:** Python 3.11
 - **데이터베이스:** POSTGRES 15.5
@@ -7,7 +7,7 @@
 - **에디터:** PyCharm
 
 
-- 패키지 다운로드 :
+- Python 패키지 설치 :
   pip install -r requirements.txt
 
   
