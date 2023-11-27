@@ -17,10 +17,10 @@
 
 - config 파일 구성하기 :
 
-   config.json 파일에 id, password, host, port, name, schema 넣기
+   config.json 파일에 id, password, host, port, name, schema 포함
 
 
-- 데이터 넣는 방법 : 
+- 데이터  입력 방법 : 
 
     sample.py - def insert_data()의 data에 데이터 넣기
 
@@ -36,7 +36,7 @@ conn, cur, engine = sample.postgres_con(config)로 연결
    main.py - sample.create_table(conn,cur)로 테이블 생성
 
 
-- 들어간 data 보기 :
+- DB에 입력된 data 확인 :
 
    main.py - sample.show_data(engine) 으로 확인
 
