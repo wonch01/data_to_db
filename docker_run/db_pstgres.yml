@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  database:
+    image: postgres:15
+    restart: always
+    environment:
+      - POSTGRES_USER=id
+      - POSTGRES_PASSWORD=password #insert your secure database password!
+      - POSTGRES_DB=id
+    volumes:
+      - mydb:/var/lib/postgresql/data
+
+volumes:
+  mydb:
