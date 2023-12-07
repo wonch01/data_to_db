@@ -13,3 +13,6 @@ services:
 
 volumes:
   mydb:
+
+  # How to Run
+  # sudo docker-compose -f db_postgres.yml
