@@ -1,0 +1,41 @@
+version: '3'
+
+services:
+  db:
+    image: postgres:15
+    restart: always
+    environment:
+      #POSTGRES_HOST_AUTH_METHOD: trust
+      POSTGRES_DB: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1234
+    ports:
+      - "5433:5432"
+
+    volumes:
+      - ./mydb:/var/lib/postgresql/data
+
+  my_python:
+    image: python:3.11
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - db
+#    volumes:
+#      - /home/wonch/devel_opment/data_to_db:/app
+      
+#  httpd:
+#    image: httpd
+#    ports:
+#      - "80:80"
+#    volumes:
+#      - ./html:/usr/local/apache2/htdocs
+
+#volumes:
+#  mydb:
+
+  # How to Run
+  # sudo docker-compose -f db_postgres.yml
+  
+#됐었는데 폴더 옮기면서 뭘 만진건지 안됨..

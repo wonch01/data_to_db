@@ -38,9 +38,9 @@ def postgres_close(pg_conn, pg_cur):
 
 
 def create_table(conn, cur):
-    # 'Mydata' 이름의 테이블이 존재하지 않는다면 (coordinates, text_data, numeric_data) column을 갖는 테이블을 생성하는 쿼리
+    # 'mydata' 이름의 테이블이 존재하지 않는다면 (coordinates, text_data, numeric_data) column을 갖는 테이블을 생성하는 쿼리
     create_table_sql = """
-    CREATE TABLE IF NOT EXISTS Mydata (
+    CREATE TABLE IF NOT EXISTS mydata (
         coordinates integer[],
         text_data text,
         numeric_data double precision
@@ -53,9 +53,9 @@ def create_table(conn, cur):
 def insert_data(conn, cur):
     data = data_handler.read_data(file_path='./data.json')
 
-    # Mydata db의 (coordinates, text_data, numeric_data)칼럼에 값 넣기
+    # mydata db의 (coordinates, text_data, numeric_data)칼럼에 값 넣기
     insert_data_sql = """
-            INSERT INTO Mydata (coordinates, text_data, numeric_data)
+            INSERT INTO mydata (coordinates, text_data, numeric_data)
             VALUES (%s, %s, %s);"""
 
     for item in data:
