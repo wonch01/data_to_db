@@ -1,0 +1,615 @@
+    1  git init
+    2  git remote add origin git@github.com:honeybLee/DataHandling.git
+    3  git pull origin master
+    4  cat ~/.ssh/id_rsa.pub
+    5  ssh-keygen
+    6  cat ~/.ssh/id_rsa.pub
+    7  git remote add origin git@github.com:honeybLee/DataHandling.git
+    8  git pull origin master
+    9  sudo apt-get update
+   10  sudo apt install gnome-terminal
+   11  dir
+   12  cd ..
+   13  dir
+   14  cd wonch/
+   15  cd download
+   16  cd downloads
+   17  cls
+   18  cd 다운로드/
+   19  약
+   20  dir
+   21  sudo apt-get install ./docker-desktop-4.25.2-amd64.deb 
+   22  dir
+   23  sudo apt-get install ./docker-desktop-4.25.2-amd64.deb
+   24  sudo apt remove docker-desktop
+   25  cd ..
+   26  sudo apt purge docker-desktop
+   27  cat /etc/hosts
+   28  vim /etc/hosts
+   29  sudo apt install vim
+   30  sudo apt-get install ca-certificates
+   31  sudo apt-get install curl
+   32  sudo apt-get install gnupg
+   33  sudo apt-get install lsb-release
+   34  sudo mkdir -p /etc/apt/keyrings
+   35  dir
+   36  curl -fsSL https://download.docker.com/linux/ubuntu/gpg 
+   37  200~sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+   38  sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+   39  sudo apt-get install curl
+   40  sudo apt-get install gnupg
+   41  sudo apt-get install lsb-release
+   42  sudo mkdir -p /etc/apt/keyrings
+   43  curl -fsSL https://download.docker.com/linux/gpg
+   44  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+   45  sudo chmod a+r /etc/apt/keyrings/docker.gpg
+   46  [200~echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+   47    $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+   48    $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
+   49  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+   50    $(. /etc/os-release && echo "$VERSION_CODENAME") stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+   51  sudo apt-get update
+   52  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+   53  sudo docker version
+   54  dir
+   55  cd ..
+   56  dir
+   57  cd ..
+   58  cd etc
+   59  dir
+   60  cd ..
+   61  dir
+   62  cd root
+   63  cd ~
+   64  dir
+   65  cd ..
+   66  cd sur
+   67  dir
+   68  cd wonch
+   69  dir
+   70  clear
+   71  apt-get install git
+   72  sudo apt-get install git
+   73  dir
+   74  cd 다운로드/
+   75  dir
+   76  cd pycharm-community-2023.2.5/
+   77  dir
+   78  cd bin
+   79  dir
+   80  sh pycharm.sh 
+   81  python3 -V
+   82  dir
+   83  pycharm.sh
+   84  sh pycharm.sh 
+   85  cd ..
+   86  dir
+   87  sh pycharm.sh 
+   88  cd ..
+   89  dir
+   90  wget -O - https://dbeaver.io/debs/dbeaver.gpg.key | sudo apt-key add -
+   91  sudo wget -O - https://dbeaver.io/debs/dbeaver.gpg.key | sudo apt-key add -
+   92  wget -O - https://dbeaver.io/debs/dbeaver.gpg.key | sudo apt-key add -
+   93  echo "deb https://dbeaver.io/debs/dbeaver-ce /" | sudo tee /etc/apt/sources.list.d/dbeaver.list
+   94  sudo apt-get update && sudo apt-get install dbeaver-ce
+   95  wget -qO - https://www.mongodb.org/static/pgp/server-5.0.asc | sudo apt-key add -
+   96  lsb_release -dc
+   97  wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
+   98  sudo add-apt-repository 'deb [arch=amd64] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse'
+   99  sudo apt install mongodb-org
+  100  sudo yum erase $(sudo rpm -qa | grep mongodb-org)
+  101  apt remove mongodb-org*
+  102  sudo apt remove mongodb-org*
+  103  apt-get purge mongodb-org*
+  104  sudo apt-get purge mongodb-org*
+  105  sudo rm -r /var/log/mongodb
+  106  sudo rm -r /var/lib/mongodb
+  107  sudo rm -r /etc/mongodb.conf
+  108  sudo apt list --installed|grep mongo
+  109  sudo wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
+  110  sudo add-apt-repository 'deb [arch=amd64] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse'
+  111  sudo apt install mongodb-org
+  112  E: 문제를 바로잡을 수 없습니다. 망가진 고정 패키지가 있습니다.
+  113  sudo apt-get install mongodb-org-mongos
+  114  sudo apt-get install libssl1.1
+  115  sudo apt-get install libssl1.1=1.1.0
+  116  sudo apt-get install mongodb-org
+  117  sudo apt-get install mongodb-org-shell
+  118  sudo apt-get install libssl
+  119  sudo apt-get install libssl1
+  120  sudo apt-get install libssl1.1
+  121  sudo apt-get --fix-broken install
+  122  sudo apt-get clean
+  123  sudo apt-get install -f
+  124  sudo dpkg --configure -a
+  125  sudo apt-get update
+  126  sudo rm /var/lib/apt/lists/* -vf
+  127  sudo apt-get update
+  128  sudo apt-get clean
+  129  sudo apt-get autoclean
+  130  sudo apt-get autoremove
+  131  sudo dpkg --configure -a
+  132  sudo apt-get update
+  133  sudo apt update
+  134  sudo apt install dirmngr gnupg apt-transport-https ca-certificates software-properties-common
+  135  sudo wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
+  136  sudo add-apt-repository 'deb [arch=amd64] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse'
+  137  sudo apt install mongodb-org
+  138  sudo wget -qO - https://www.mongodb.org/static/pgp/server-6.0.asc | sudo apt-key add -
+  139  echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/6.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-6.0.list
+  140  sudo apt-get update
+  141  sudo apt-get install -y mongodb-org
+  142  clear
+  143  sudo systemctl enable --now mongodb
+  144  sudo systemctl enable --now mongod
+  145  mongod
+  146  mongo --eval 'db.runCommand({connectionStatus:1})'
+  147  sudo mongo --eval 'db.runCommand({connectionStatus:1})'
+  148  mongo localhost:4707
+  149  dir
+  150  sudo mkdir -p /data/db
+  151  sudo chown -R wonch -un /data/db
+  152  mongod
+  153  mongo
+  154  sudo apt-get install -y mongodb-org
+  155  sudo add-apt-repository 'deb [arch=amd64] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse'
+  156  sudo apt install mongodb-org
+  157  sudo mongo --eval 'db.runCommand({ connectionStatus: 1 })'
+  158  sudo apt update
+  159  apt list --upgradeable
+  160  sudo apt install dirmngr gnupg apt-transport-https ca-certificates software-properties-common
+  161  sudo wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
+  162  sudo add-apt-repository 'deb [arch=amd64] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse'
+  163  sudo apt install mongodb-org
+  164  sudo systemctl enable --now mongod
+  165  mongo --eval 'db.runCommand({ connectionStatus: 1 })'
+  166  sudo systemctl status mongodb
+  167  sudo apt-get install yum
+  168  apt list --installed | grep mongo
+  169  apt-get list --installed | grep mongo
+  170  vim
+  171  vim /etc/mongod.conf
+  172  sudo vim /etc/mongod.conf
+  173  sudo systemctl restart mongod
+  174  mongo
+  175  apt remove mongodb-org*
+  176  sudo apt remove mongodb-org*
+  177  sudo apt-get purge mongodb-org*
+  178  sudo rm -r /var/log/mongodb
+  179  sudo rm -r /var/lib/mongodb
+  180  sudo rm -r /etc/mongodb.conf
+  181  sudo apt list --installed | grep mongo
+  182  dpkg --list
+  183  sudo apt-get --purge remove mongodb-server-core
+  184  dpkg --list
+  185  apt list --installed | grep mongo
+  186  sudo apt list --installed | grep mongo
+  187  sudo apt-get --purge remove mongodb-*
+  188  apt list --installed | grep mongo
+  189  sudo apt update
+  190  sudo apt install dirmngr gnupg apt-transport-https ca-certificates software-properties-common
+  191  sudo wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
+  192  sudo add-apt-repository 'deb [arch=amd64] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse'
+  193  sudo apt install mongodb-org
+  194  sudo systemctl enable --now mongod
+  195  sudo mongo --eval 'db.runCommand({ connectionStatus: 1 })'
+  196  sudo apt yum install
+  197  sudo apt remove mongodb-org*
+  198  sudo apt-get purge mongodb-org*
+  199  rm -r /var/log/mongodb
+  200  sudo rm -r /var/lib/mongodb
+  201  sudo rm -r /etc/mongodb.conf
+  202  sudo apt list --installed | grep mongo
+  203  sudo apt-get --purge remove mongodb-*
+  204  sudo wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
+  205  echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list
+  206  sudo apt-get update
+  207  sudo apt-get install -y mongodb-org
+  208  ps --no-headers -o comm 1
+  209  sudo systemctl start mongod
+  210  sudo systemctl status mongod
+  211  mongo
+  212  mongo --eval 'db.runCommand({ connectionStatus: 1 })'
+  213  sudo mongo
+  214  sudo systemctl status mongod
+  215  mongod
+  216  mongo
+  217  mongod
+  218  mongo
+  219  docker container run hello-world
+  220  sudo groupadd docker
+  221  sudo usermod -aG docker $USER
+  222  docker container run hello-world
+  223  sudo docker container run hello-world
+  224  sudo systemctl start docker
+  225  sudo systemctl status docker
+  226  sudo systemctl enable  docker
+  227  sudo usermod -aG docker $USER
+  228  newgrp docker
+  229  mongod
+  230  mongo
+  231  dir
+  232  sudo systemctl start mongod
+  233  sudo systemctl status mongod
+  234  mongo
+  235  sudo apt-get install -y mongodb-clients
+  236  sudo systemctl start mongod
+  237  udo systemctl status mongod
+  238  sudo systemctl status mongo
+  239  sudo systemctl status mongod
+  240  sudo apt-get install -y mongodb-clients
+  241  dpkg --list
+  242  sudo apt-get --purge remove mongodb-server-core
+  243  sudo apt-get --purge remove mongodb-server
+  244  sudo apt-get --purge remove mongodb-org
+  245  apt list --installed | grep mongo
+  246  apt remove mongodb-org*
+  247  sudo apt remove mongodb-org*
+  248  sudo apt-get purge mongodb-org*
+  249  sudo rm -r /var/log/mongodb
+  250  sudo rm -r /var/lib/mongodb
+  251  sudo rm -r /etc/mongodb.conf
+  252  apt list --installed | grep mongo
+  253  sudo apt-get --purge remove mongodb-*
+  254  apt list --installed | grep mongo
+  255  lsb_release -dc
+  256  sudo wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
+  257  docker --version
+  258  docker run hello-world
+  259  [200~udo curl -L https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
+  260  sudo curl -L https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
+  261  sudo chmod +x /usr/local/bin/docker-compose
+  262  docker-compose --version
+  263  sudo apt-get install indicator-stickynotes
+  264  sudo add-apt-repository ppa:umang/indicator-stickynotes
+  265  sudo apt-get update
+  266  sudo apt-get install indicator-stickynotes
+  267  indicator-stickynotes
+  268  mongod
+  269  mongo
+  270  clear
+  271  apt list --installed | grep mongo
+  272  lsb_release -a
+  273  echo "deb http://security.ubuntu.com/ubuntu impish-
+  274  security main" | sudo tee /etc/apt/sources.list.d/impish-security.list
+  275  sudo apt apdate
+  276  sudo apt update
+  277  echo "deb http://security.ubuntu.com/ubuntu impish-security main" | sudo tee /etc/apt/sources.list.d/impish-security.list
+  278  cd /etc/ap
+  279  cd /etc
+  280  ll
+  281  history
+  282  cd apt
+  283  ll
+  284  cd sources.list.d/
+  285  ll
+  286  echo "deb http://security.ubuntu.com/ubuntu impish-security main" | sudo tee /etc/apt/sources.list.d/impish-security.list 
+  287  sudo apt update
+  288  sudo apt install libssl1.1
+  289  sudo apt install libssl 1.1
+  290  wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.0g-2ubuntu4_amd64.deb
+  291  sudo wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.0g-2ubuntu4_amd64.deb
+  292  sudo dpkg -i libssl1.1_1.1.0g-2ubuntu4_amd64.deb
+  293  sudo wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
+  294  출처: https://neo012.tistory.com/71 [Arch Linux 사용자:티스토리]
+  295  sudo wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
+  296  sudo wget-qO-https://www.mongodb.org/static/pgp/server-4.4.asc|sudoapt-keyadd-
+  297  sudo wget-qO-https://www.mongodb.org/static/pgp/server-4.4.asc|sudo apt-keyadd-
+  298  sudo wget -qO- https://www.mongodb.org/static/pgp/server-4.4.asc|sudo apt-keyadd -
+  299  sudo wget -qO- https://www.mongodb.org/static/pgp/server-4.4.asc|sudo apt-key add -
+  300  sudo echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-
+  301  org/4.4multiverse"|sudotee/etc/apt/sources.list.d/mongodb-org-4.4.list
+  302  sudo echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-
+  303  org/4.4 multiverse"|sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list
+  304  sudo echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse"|sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list
+  305  echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list
+  306  sudo apt update
+  307  sudo apt install -y mongodb-org=4.4.11 mongodb-org-server=4.4.11 mongodb-org-shell=4.4.11 mongodb-org-mongos=4.4.11 mongodb-org-tools=4.4.11
+  308  sudo systemctl start mongod
+  309  sudo systemctl status mongod
+  310  sudo systemctl enable mongod
+  311  mongo
+  312  docker
+  313  docker-compose up -d
+  314  sudo apt-get install -y docker.io docker-compose
+  315  cd ..
+  316  dis
+  317  dir
+  318  cd home/
+  319  dir
+  320  cd wonch/
+  321  dir
+  322  sudo apt-get update
+  323  sudo apt-get install -y docker.io docker-compose
+  324  docker run hello-world
+  325  docker-compose --version
+  326  vim docker-compose.yml
+  327  docker-compose up -d
+  328  docker exec -it my_timescaledb psql -U postgres -d edge_timescaledb
+  329  docker exec -it edge_timescaledb psql -U postgres -d edge_timescaledb
+  330  docker ps -a
+  331  docker ps
+  332  docker start 3a1823998e82693803f45ee19ad512506e1d205d229327beefa548c74b6687ff
+  333  docker ps
+  334  docker ps -a
+  335  docker start 3a1823998e82
+  336  docker ps
+  337  docker ps -a
+  338  docker inspect 3a1823998e82693803f45ee19ad512506e1d205d229327beefa548c74b6687ff
+  339  docker start 3a1823998e82693803f45ee19ad512506e1d205d229327beefa548c74b6687ff
+  340  docker system df
+  341  docker rm 3a1823998e82693803f45ee19ad512506e1d205d229327beefa548c74b6687ff
+  342  docker ps
+  343  docker ps -a
+  344  docker rm 'docker ps -qa'
+  345  docker rm 'docker ps -q -a'
+  346  docker rm 'docker ps -a'
+  347  docker exec -it edge_timescaledb psql -U postgres -d edge_timescaledb
+  348  dir
+  349  vim docker-compose.yml 
+  350  docker-compose up -d
+  351  docker exec -it edge_timescaledb psql -U postgres -d edge_timescaledb
+  352  docker start container f35acd7308518bb8389d1fb7f944c0a0cad333f4669c2e83fa5c18b3133aa1a9
+  353  docker start f35acd7308518bb8389d1fb7f944c0a0cad333f4669c2e83fa5c18b3133aa1a9
+  354  docker exec -it edge_timescaledb psql -U postgres -d edge_timescaledb
+  355  docker ps -a
+  356  docker start 3a1823998e82693803f45ee19ad512506e1d205d229327beefa548c74b6687ff
+  357  docler start f35acd730851
+  358  docker start f35acd730851
+  359  docker ps
+  360  docker ps -a
+  361  docker system df
+  362  docker-compose logs
+  363  docker-compose restart
+  364  docker ps -a
+  365  docker inspect f35acd730851
+  366  docker ps
+  367  docker ps -a
+  368  sudo apt update
+  369  sudo apt update docker-ce
+  370  docker-compose up -d
+  371  psql --version
+  372  sudo sh -c 'echo "deb https://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+  373  wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+  374  sudo apt-get update
+  375  sudo apt-get -y install postgresql-14
+  376  psql --version
+  377  docker ps -a
+  378  docker rm -f $(docker ps -a -q)
+  379  docker ps -a
+  380  vim docker-compose.yml 
+  381  docker-compose up -d
+  382  docker exec -it edge_timescale psql -U postgres -d docker_timescaledb
+  383  sudo lsof -i :5432
+  384  vim docker-compose.yml 
+  385  sudo lsof -i :5432
+  386  vim docker-compose.yml 
+  387  docker-compose up -d
+  388  docker exec -it edge_timescale psql -U postgres -d docker_timescaledb
+  389  sudo systemctl restart docker
+  390  docker-compose up -d
+  391  docker exec -it edge_timescale psql -U postgres -d docker_timescaledb
+  392  docker ps -a
+  393  sudo service docker restart
+  394  vim docker-compose.yml 
+  395  sudo lsof -i :5432
+  396  sudo kill -9 18197
+  397  sudo lsof -i :5432
+  398  sudo service docker restart
+  399  docker-compose up -d
+  400  docker exec -it edge_timescale psql -U postgres -d docker_timescaledb
+  401  docker ps -a
+  402  sudo lsof -i :5432
+  403  sudo service docker restart
+  404  sudo systemctl restart docker
+  405  docker-compose up -d
+  406  docker exec -it edge_timescale psql -U postgres -d docker_timescaledb
+  407  docker ps -a
+  408  docker container start 84b3cd92ad1a
+  409  docker exec -it edge_timescale psql -U postgres -d docker_timescaledb
+  410  docker container start 84b3cd92ad1a4ef3e061fb8c7bebba367dd867604e0191bdbbb0e0be41b4a8f1
+  411  docker exec -it edge_timescale psql -U postgres -d docker_timescaledb
+  412  docker-compose -v
+  413  vim docker-compose.yml 
+  414  docker-compose down && docker-compose build --pull && docker-compose up -d
+  415  docker-compose logs -f
+  416  docker ps -a
+  417  docker ps
+  418  vim docker-compose.yml 
+  419  docker-compose up -d
+  420  docker-compose ps
+  421  docker ps -a
+  422  docker rm c4444831b947
+  423  docker ps -a
+  424  docker-compose up -d
+  425  docker-compose ps
+  426  docker-compose ps -a
+  427  docker-compose restart
+  428  docker-compose ps -a
+  429  docker-compose ps
+  430  docker-compose logs
+  431  psql -U postgres -d docker_timescaledb
+  432  sudo psql -U postgres -d docker_timescaledb
+  433  show data_checksums;
+  434  sudo apt install mailutils-mh
+  435  show data_checksums;
+  436  sudo apt install mmh
+  437  show data_checksums;
+  438  cd ..
+  439  cd /etc
+  440  cd postgresql/14/main
+  441  vim postgresql.conf
+  442  dir
+  443  vim postgresql.conf
+  444  show data_checksums;
+  445  sudo psql -U postgres -d docker_timescaledb
+  446  docker-compose logs
+  447  docker-compose restart
+  448  vim postgresql.conf
+  449  sudo vim postgresql.conf 
+  450  cd .
+  451  cd ~
+  452  dir
+  453  docker-compose logs
+  454  initdb --data-checksums -D /var/lib/postgresql/data
+  455  postgres --version
+  456  docker
+  457  docker ps
+  458  docker ps -a
+  459  postgres --version
+  460  postgresql --version
+  461  vim docker-compose.yml 
+  462  psql --version
+  463  postgres --version
+  464  pg_config --version
+  465  vim docker-compose.yml 
+  466  docker ps -a
+  467  sudo psql -U postgres -d docker_timescaledb
+  468  docker exec -it timescale psql -U postgres -d timescaledb
+  469  docker-compose ps
+  470  docker-compose up -d
+  471  docker-compose ps
+  472  docker-compose ps -a
+  473  vim docker-compose.yml 
+  474  docker-compose ps -a
+  475  dir
+  476  docker-compose docker-compose.yml 
+  477  docker-compose up
+  478  docker-compose ps
+  479  docker-compose ps -a
+  480  rm -rf /path/to/your/docker/project/data
+  481  vim docker-compose.yml 
+  482  docker-compose up -d
+  483  vim docker-compose.yml 
+  484  docker-compose up -d
+  485  docker logs timescale
+  486  docker-compose ps
+  487  docker-compose ps -a
+  488  postgres
+  489  postgre
+  490  postgresql
+  491  [200~/usr/pgsql-14/bin/postgresql-14-setup initdb
+  492  출처: https://blife.tistory.com/23 [SEON'S BUILD-UP LIFE STORY:티스토리]~
+  493  /usr/pgsql-14/bin/postgresql-14-setup initdb
+  494  postgresql-14-setup initdb
+  495  sudo service postgresql start
+  496  sudo service postgresql status
+  497  sudo -i -u postgrs
+  498  sudo -i -u postgres
+  499  docker ps
+  500  docker ps -a
+  501  docker search
+  502  docker search postgresql
+  503  docker pull postgres
+  504  docker ps -a
+  505  docker run -p 80:80 --name postgres
+  506  docker run -p 80:80 --name postgres -e POSTGRES_PASSWORD=1234 -e TZ=Asia/Seoul -v var/lib/postgres/data
+  507  docker images
+  508  docker run postgres -p 80:80 --name postgres -e POSTGRES_PASSWORD=1234 -e TZ=Asia/Seoul -v var/lib/postgres/data
+  509  docker run postgres -p 5432:5432 --name postgres -e POSTGRES_PASSWORD=1234 -e TZ=Asia/Seoul -v var/lib/postgres/data -d postgres
+  510  docker run -p 5432:5432 --name postgres -e POSTGRES_PASSWORD=1234 -e TZ=Asia/Seoul -v var/lib/postgres/data -d postgres
+  511  docker ps -a
+  512  docker ps
+  513  docker rm -f 872ef654d7ef
+  514  docker rm -f 27e429fcd195
+  515  docker rm -f b64dc5d11693
+  516  docker ps -a
+  517  docker run -p 5432:5432 --name postgres -e POSTGRES_PASSWORD=1234 -e TZ=Asia/Seoul -d postgres
+  518  docker ps
+  519  docker ps -a
+  520  docker exec -it postgres /bin/bash
+  521  docker ps
+  522  ls
+  523  clera
+  524  clear
+  525  docker ps -a
+  526  clear
+  527  ll
+  528  clear
+  529  ll
+  530  clera
+  531  clear
+  532  ll
+  533  clera
+  534  ls
+  535  clear
+  536  ls
+  537  mkdir devel_opment
+  538  ls
+  539  cd devel_opment/
+  540  ls
+  541  clear
+  542  ll
+  543  git clone git@github.com:wonch01/data_to_db.git
+  544  clear
+  545  ll
+  546  cd data_to_db/
+  547  ls
+  548  clear
+  549  ls
+  550  history
+  551  history | less
+  552  ifconfig
+  553  sudo apt install net-tools
+  554  clear
+  555  ifconfig
+  556  clear
+  557  ll
+  558  clera
+  559  ls
+  560  clear
+  561  ls
+  562  ll
+  563  clear
+  564  ll
+  565  screen
+  566  sudo apt install screen 
+  567  clear
+  568  ll
+  569  clear
+  570  ls
+  571  history
+  572  ifconfig
+  573  ssh localhost
+  574  ssh wonch@localhost
+  575  sudo apt install openssh-server
+  576  ssh wonch@localhost
+  577  clear
+  578  ll
+  579  ifconfig
+  580  clear
+  581  ll
+  582  clear
+  583  ls
+  584  ll
+  585  cd docker_run/
+  586  ls
+  587  clear
+  588  ll
+  589  cat readme.md 
+  590  vim db_pstgres.yml 
+  591  cat db_pstgres.yml 
+  592  clear
+  593  ll
+  594  docker-compose 
+  595  clear
+  596  docker-compose 
+  597  docker-compose  --help
+  598  docker-compose  --help | less
+  599  docker-compose -f docker-compose.yml
+  600  ls
+  601  docker-compose -f docker-compose.yml
+  602  docker-compose up -f docker-compose.yml
+  603  docker-compose -f docker-compose.yml up
+  604  docker-compose -f db_pstgres.yml up
+  605  docker-compose -f db_pstgres.yml up -d
+  606  sudo docker ps
+  607  docker-compose -f db_pstgres.yml down
+  608  screen 
+  609  clear
+  610  screen -list
+  611  screen -S db
+  612  screen -list
+  613  screen -S db
+  614  history
+  615  history > history.txt
